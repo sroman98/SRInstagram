@@ -62,6 +62,9 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 Describe any challenges encountered while building the app.
 Database setup.
 
+### Command:
+parse-dashboard --appId srinstagram --masterKey v5*VTcDeMw8u --serverURL "https://srinstagram.herokuapp.com/parse"
+
 ## License
 
 Copyright [2019] [Sandra Roman Rivera]

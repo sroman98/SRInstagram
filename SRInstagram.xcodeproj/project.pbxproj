@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -103,7 +103,6 @@
 				0018C0D8B9DFC3245ED8DADE /* Pods-SRInstagramUITests.debug.xcconfig */,
 				6480F9214FD35C3B8FFFA2C3 /* Pods-SRInstagramUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
