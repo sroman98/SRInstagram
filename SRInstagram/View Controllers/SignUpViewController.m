@@ -33,7 +33,9 @@
     newUser.email = self.emailField.text;
     newUser.password = self.passwordField.text;
     
-    if([newUser.username isEqualToString:@""] || [newUser.password isEqualToString:@""]) {
+    NSString *usernameNoSpaces = [self.usernameField.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    if([usernameNoSpaces isEqualToString:@""] || [newUser.password isEqualToString:@""]) {
         NSLog(@"Username or password missing!");
     } else {
         // call sign up function on the object

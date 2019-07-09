@@ -18,22 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instagram-launch" translatesAutoresizingMaskIntoConstraints="NO" id="6kD-KJ-vrT">
-                                <rect key="frame" x="0.0" y="208" width="375" height="251"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white-icon" translatesAutoresizingMaskIntoConstraints="NO" id="7Zl-9C-2bJ">
+                                <rect key="frame" x="129" y="207" width="116" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DME-Bt-UUF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="insta-white" translatesAutoresizingMaskIntoConstraints="NO" id="ycG-MY-nmt">
+                                <rect key="frame" x="67" y="331" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.39200016856193542" green="0.16550394892692566" blue="0.72160983085632324" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSC-dZ-T2R">
-                                <rect key="frame" x="0.0" y="456" width="375" height="211"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95064884424209595" green="0.84406870603561401" blue="0.50581169128417969" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -43,6 +39,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="instagram-launch" width="850" height="566"/>
+        <image name="insta-white" width="1200" height="630"/>
+        <image name="white-icon" width="317" height="309"/>
     </resources>
 </document>
