@@ -17,6 +17,7 @@
 		7B7FA8B322D3FB0900112EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FA8B222D3FB0900112EC9 /* main.m */; };
 		7B7FA8BD22D3FB0900112EC9 /* SRInstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FA8BC22D3FB0900112EC9 /* SRInstagramTests.m */; };
 		7B7FA8C822D3FB0900112EC9 /* SRInstagramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FA8C722D3FB0900112EC9 /* SRInstagramUITests.m */; };
+		7B87C52422D4F60C00A1EC75 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C52322D4F60C00A1EC75 /* HomeViewController.m */; };
 		7BDBDE3322D40FF8002C983D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDBDE3222D40FF8002C983D /* LoginViewController.m */; };
 		7BDBDE3622D41310002C983D /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDBDE3522D41310002C983D /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,8 @@
 		7B7FA8C322D3FB0900112EC9 /* SRInstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRInstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7FA8C722D3FB0900112EC9 /* SRInstagramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRInstagramUITests.m; sourceTree = "<group>"; };
 		7B7FA8C922D3FB0900112EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B87C52222D4F60C00A1EC75 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		7B87C52322D4F60C00A1EC75 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		7BDBDE3122D40FF8002C983D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7BDBDE3222D40FF8002C983D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7BDBDE3422D41310002C983D /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 				7BDBDE3222D40FF8002C983D /* LoginViewController.m */,
 				7BDBDE3422D41310002C983D /* SignUpViewController.h */,
 				7BDBDE3522D41310002C983D /* SignUpViewController.m */,
+				7B87C52222D4F60C00A1EC75 /* HomeViewController.h */,
+				7B87C52322D4F60C00A1EC75 /* HomeViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 				7B7FA8B322D3FB0900112EC9 /* main.m in Sources */,
 				7B7FA8A522D3FB0800112EC9 /* AppDelegate.m in Sources */,
 				7BDBDE3622D41310002C983D /* SignUpViewController.m in Sources */,
+				7B87C52422D4F60C00A1EC75 /* HomeViewController.m in Sources */,
 				7BDBDE3322D40FF8002C983D /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
