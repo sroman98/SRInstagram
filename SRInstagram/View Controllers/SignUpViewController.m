@@ -38,12 +38,6 @@
     }];
 }
 
-- (IBAction)didTapReturn:(id)sender {
-    [self.usernameField resignFirstResponder];
-    [self.emailField resignFirstResponder];
-    [self.passwordField resignFirstResponder];
-}
-
 - (IBAction)didTapRegister:(id)sender {
     // initialize a user object
     PFUser *newUser = [PFUser user];
@@ -60,6 +54,12 @@
     } else {
         [self registerUser:newUser];
     }
+}
+
+- (IBAction)didTapReturn:(id)sender {
+    [self.usernameField resignFirstResponder];
+    [self.emailField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
 }
 
 /*
