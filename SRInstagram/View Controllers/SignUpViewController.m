@@ -24,7 +24,27 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)registerUser {
+- (void)registerUser:(PFUser *)newUser {
+    // call sign up function on the object
+    [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
+        if (error != nil) {
+            NSLog(@"Error: %@", error.localizedDescription);
+        } else {
+            NSLog(@"User registered successfully");
+            
+            // manually segue to logged in view
+            [self performSegueWithIdentifier:@"registerToHomeSegue" sender:self];
+        }
+    }];
+}
+
+- (IBAction)didTapReturn:(id)sender {
+    [self.usernameField resignFirstResponder];
+    [self.emailField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
+}
+
+- (IBAction)didTapRegister:(id)sender {
     // initialize a user object
     PFUser *newUser = [PFUser user];
     
@@ -38,27 +58,8 @@
     if([usernameNoSpaces isEqualToString:@""] || [newUser.password isEqualToString:@""]) {
         NSLog(@"Username or password missing!");
     } else {
-        // call sign up function on the object
-        [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
-            if (error != nil) {
-                NSLog(@"Error: %@", error.localizedDescription);
-            } else {
-                NSLog(@"User registered successfully");
-                
-                // manually segue to logged in view
-            }
-        }];
+        [self registerUser:newUser];
     }
-}
-
-- (IBAction)didTapReturn:(id)sender {
-    [self.usernameField resignFirstResponder];
-    [self.emailField resignFirstResponder];
-    [self.passwordField resignFirstResponder];
-}
-
-- (IBAction)didTapRegister:(id)sender {
-    [self registerUser];
 }
 
 /*
