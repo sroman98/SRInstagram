@@ -23,6 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+//add comment to test
 
 - (void)registerUser {
     // initialize a user object
