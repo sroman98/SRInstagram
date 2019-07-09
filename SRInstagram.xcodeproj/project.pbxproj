@@ -11,13 +11,14 @@
 		75AE92E02B121AC7D1F02681 /* libPods-SRInstagramUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96194DD0C0E1559AA1BD65EF /* libPods-SRInstagramUITests.a */; };
 		79A697A5A2486399840A5CE5 /* libPods-SRInstagramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DC4D90C2822CC2858A91EC /* libPods-SRInstagramTests.a */; };
 		7B7FA8A522D3FB0800112EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FA8A422D3FB0800112EC9 /* AppDelegate.m */; };
-		7B7FA8A822D3FB0800112EC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FA8A722D3FB0800112EC9 /* ViewController.m */; };
 		7B7FA8AB22D3FB0800112EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7FA8A922D3FB0800112EC9 /* Main.storyboard */; };
 		7B7FA8AD22D3FB0900112EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7FA8AC22D3FB0900112EC9 /* Assets.xcassets */; };
 		7B7FA8B022D3FB0900112EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7FA8AE22D3FB0900112EC9 /* LaunchScreen.storyboard */; };
 		7B7FA8B322D3FB0900112EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FA8B222D3FB0900112EC9 /* main.m */; };
 		7B7FA8BD22D3FB0900112EC9 /* SRInstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FA8BC22D3FB0900112EC9 /* SRInstagramTests.m */; };
 		7B7FA8C822D3FB0900112EC9 /* SRInstagramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FA8C722D3FB0900112EC9 /* SRInstagramUITests.m */; };
+		7BDBDE3322D40FF8002C983D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDBDE3222D40FF8002C983D /* LoginViewController.m */; };
+		7BDBDE3622D41310002C983D /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDBDE3522D41310002C983D /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +46,6 @@
 		7B7FA8A022D3FB0800112EC9 /* SRInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7FA8A322D3FB0800112EC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B7FA8A422D3FB0800112EC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7B7FA8A622D3FB0800112EC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7B7FA8A722D3FB0800112EC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7B7FA8AA22D3FB0800112EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B7FA8AC22D3FB0900112EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B7FA8AF22D3FB0900112EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +57,10 @@
 		7B7FA8C322D3FB0900112EC9 /* SRInstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRInstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7FA8C722D3FB0900112EC9 /* SRInstagramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRInstagramUITests.m; sourceTree = "<group>"; };
 		7B7FA8C922D3FB0900112EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDBDE3122D40FF8002C983D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7BDBDE3222D40FF8002C983D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7BDBDE3422D41310002C983D /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		7BDBDE3522D41310002C983D /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		882ADDC39D6E834D0F5476F5 /* Pods-SRInstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRInstagram.release.xcconfig"; path = "Target Support Files/Pods-SRInstagram/Pods-SRInstagram.release.xcconfig"; sourceTree = "<group>"; };
 		96194DD0C0E1559AA1BD65EF /* libPods-SRInstagramUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRInstagramUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DC4D90C2822CC2858A91EC /* libPods-SRInstagramTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRInstagramTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,10 +134,9 @@
 		7B7FA8A222D3FB0800112EC9 /* SRInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				7BDBDE2D22D40BE5002C983D /* View Controllers */,
 				7B7FA8A322D3FB0800112EC9 /* AppDelegate.h */,
 				7B7FA8A422D3FB0800112EC9 /* AppDelegate.m */,
-				7B7FA8A622D3FB0800112EC9 /* ViewController.h */,
-				7B7FA8A722D3FB0800112EC9 /* ViewController.m */,
 				7B7FA8A922D3FB0800112EC9 /* Main.storyboard */,
 				7B7FA8AC22D3FB0900112EC9 /* Assets.xcassets */,
 				7B7FA8AE22D3FB0900112EC9 /* LaunchScreen.storyboard */,
@@ -160,6 +162,17 @@
 				7B7FA8C922D3FB0900112EC9 /* Info.plist */,
 			);
 			path = SRInstagramUITests;
+			sourceTree = "<group>";
+		};
+		7BDBDE2D22D40BE5002C983D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BDBDE3122D40FF8002C983D /* LoginViewController.h */,
+				7BDBDE3222D40FF8002C983D /* LoginViewController.m */,
+				7BDBDE3422D41310002C983D /* SignUpViewController.h */,
+				7BDBDE3522D41310002C983D /* SignUpViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		7CA40A9CE96EAEA8844850E1 /* Frameworks */ = {
@@ -392,9 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7FA8A822D3FB0800112EC9 /* ViewController.m in Sources */,
 				7B7FA8B322D3FB0900112EC9 /* main.m in Sources */,
 				7B7FA8A522D3FB0800112EC9 /* AppDelegate.m in Sources */,
+				7BDBDE3622D41310002C983D /* SignUpViewController.m in Sources */,
+				7BDBDE3322D40FF8002C983D /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
