@@ -155,7 +155,11 @@
                                 <action selector="tapClose:" destination="Tq0-bG-VCW" id="PPU-QC-zTa"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Share" id="Mss-kK-7HR"/>
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="Mss-kK-7HR">
+                            <connections>
+                                <action selector="didTapShare:" destination="Tq0-bG-VCW" id="t1W-Sd-vkg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="captionTextView" destination="q4W-wE-KRg" id="xWG-K5-N5j"/>

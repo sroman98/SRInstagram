@@ -19,6 +19,7 @@
 		7B7FA8C822D3FB0900112EC9 /* SRInstagramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7FA8C722D3FB0900112EC9 /* SRInstagramUITests.m */; };
 		7B87C52422D4F60C00A1EC75 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C52322D4F60C00A1EC75 /* HomeViewController.m */; };
 		7B87C52A22D52A6300A1EC75 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C52922D52A6300A1EC75 /* ComposeViewController.m */; };
+		7B87C52E22D552DB00A1EC75 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C52D22D552DB00A1EC75 /* Post.m */; };
 		7BDBDE3322D40FF8002C983D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDBDE3222D40FF8002C983D /* LoginViewController.m */; };
 		7BDBDE3622D41310002C983D /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDBDE3522D41310002C983D /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,8 @@
 		7B87C52322D4F60C00A1EC75 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		7B87C52822D52A6300A1EC75 /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
 		7B87C52922D52A6300A1EC75 /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		7B87C52C22D552DB00A1EC75 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		7B87C52D22D552DB00A1EC75 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		7BDBDE3122D40FF8002C983D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7BDBDE3222D40FF8002C983D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7BDBDE3422D41310002C983D /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 		7B7FA8A222D3FB0800112EC9 /* SRInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				7B87C52B22D5526300A1EC75 /* Models */,
 				7BDBDE2D22D40BE5002C983D /* View Controllers */,
 				7B7FA8A322D3FB0800112EC9 /* AppDelegate.h */,
 				7B7FA8A422D3FB0800112EC9 /* AppDelegate.m */,
@@ -168,6 +172,15 @@
 				7B7FA8C922D3FB0900112EC9 /* Info.plist */,
 			);
 			path = SRInstagramUITests;
+			sourceTree = "<group>";
+		};
+		7B87C52B22D5526300A1EC75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B87C52C22D552DB00A1EC75 /* Post.h */,
+				7B87C52D22D552DB00A1EC75 /* Post.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7BDBDE2D22D40BE5002C983D /* View Controllers */ = {
@@ -421,6 +434,7 @@
 				7B87C52A22D52A6300A1EC75 /* ComposeViewController.m in Sources */,
 				7B87C52422D4F60C00A1EC75 /* HomeViewController.m in Sources */,
 				7BDBDE3322D40FF8002C983D /* LoginViewController.m in Sources */,
+				7B87C52E22D552DB00A1EC75 /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

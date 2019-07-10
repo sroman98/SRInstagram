@@ -8,11 +8,12 @@
 
 #import "HomeViewController.h"
 #import "LoginViewController.h"
+#import "ComposeViewController.h"
 #import "Parse/Parse.h"
 #import "AppDelegate.h"
 
-@interface HomeViewController ()
-//<UITableViewDataSource, UITableViewDelegate>
+@interface HomeViewController () <ComposeViewControllerDelegate>
+//UITableViewDataSource, UITableViewDelegate
 
 @end
 
@@ -39,14 +40,17 @@
     }];
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    UINavigationController *navigationController = [segue destinationViewController];
+    ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
+    composeController.delegate = self;
 }
-*/
+
+- (void)didPostImage:(nonnull UIImage *)photo withCaption:(nonnull NSString *)caption {
+    NSLog(@"I uploaded %@ with capt %@", photo, caption);
+}
 
 @end

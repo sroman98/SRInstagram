@@ -7,6 +7,7 @@
 //
 
 #import "ComposeViewController.h"
+#import "Post.h"
 
 @interface ComposeViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate>
 
@@ -78,6 +79,18 @@
         textView.textColor = [UIColor lightGrayColor]; //optional
     }
     [textView resignFirstResponder];
+}
+
+- (IBAction)didTapShare:(id)sender {
+    [Post postUserImage:self.photo withCaption:self.captionTextView.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+        if(succeeded) {
+            NSLog(@"Did post");
+            [self.delegate didPostImage:self.photo withCaption:self.captionTextView.text];
+        } else {
+            NSLog(@"Error: %@", error);
+        }
+        [self dismissViewControllerAnimated:true completion:nil];
+    }];
 }
 
 /*
