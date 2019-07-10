@@ -82,7 +82,9 @@
 }
 
 - (IBAction)didTapShare:(id)sender {
-    [Post postUserImage:self.photo withCaption:self.captionTextView.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+    UIImage *resizedImage = [self resizeImage:self.photo withSize:CGSizeMake(100, 100)];
+    
+    [Post postUserImage:resizedImage withCaption:self.captionTextView.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
         if(succeeded) {
             NSLog(@"Did post");
             [self.delegate didPostImage:self.photo withCaption:self.captionTextView.text];
@@ -91,6 +93,20 @@
         }
         [self dismissViewControllerAnimated:true completion:nil];
     }];
+}
+
+- (UIImage *)resizeImage:(UIImage *)image withSize:(CGSize)size {
+    UIImageView *resizeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+    
+    resizeImageView.contentMode = UIViewContentModeScaleAspectFill;
+    resizeImageView.image = image;
+    
+    UIGraphicsBeginImageContext(size);
+    [resizeImageView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
 }
 
 /*
