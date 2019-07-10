@@ -123,6 +123,7 @@
                                         <connections>
                                             <outlet property="captionLabel" destination="tX7-jG-sOm" id="Wjs-lp-j4l"/>
                                             <outlet property="postImageView" destination="N9X-hX-M8t" id="8IP-WS-VIB"/>
+                                            <segue destination="GzT-ms-eaQ" kind="show" id="tVG-cu-YhM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -145,7 +146,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="cLl-1b-BW8">
                             <connections>
-                                <segue destination="qVw-I1-eRY" kind="presentation" id="fXj-KS-8f6"/>
+                                <segue destination="qVw-I1-eRY" kind="presentation" identifier="homeToComposeSegue" id="fXj-KS-8f6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -156,6 +157,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVp-Ku-ROC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1672.8" y="26.53673163418291"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="WWS-eM-atD">
+            <objects>
+                <viewController id="GzT-ms-eaQ" customClass="DetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lp2-hb-SC0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dvJ-Cl-qQj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ced-uB-izu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jKm-AF-hj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="750"/>
         </scene>
         <!--Compose View Controller-->
         <scene sceneID="N55-3Y-gIB">

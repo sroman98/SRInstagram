@@ -18,6 +18,7 @@
 		7B87C52A22D52A6300A1EC75 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C52922D52A6300A1EC75 /* ComposeViewController.m */; };
 		7B87C52E22D552DB00A1EC75 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C52D22D552DB00A1EC75 /* Post.m */; };
 		7B87C53222D56B5800A1EC75 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C53122D56B5800A1EC75 /* PostCell.m */; };
+		7B9E1DAD22D6454E005C4A2F /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9E1DAC22D6454E005C4A2F /* DetailsViewController.m */; };
 		7BDBDE3322D40FF8002C983D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDBDE3222D40FF8002C983D /* LoginViewController.m */; };
 		7BDBDE3622D41310002C983D /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDBDE3522D41310002C983D /* SignUpViewController.m */; };
 		8C1AD1D6161A8B3FF0F4441F /* Pods_SRInstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D130C1C350CE8EF651A36 /* Pods_SRInstagramUITests.framework */; };
@@ -68,6 +69,8 @@
 		7B87C52D22D552DB00A1EC75 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		7B87C53022D56B5800A1EC75 /* PostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
 		7B87C53122D56B5800A1EC75 /* PostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
+		7B9E1DAB22D6454E005C4A2F /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		7B9E1DAC22D6454E005C4A2F /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		7BDBDE3122D40FF8002C983D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7BDBDE3222D40FF8002C983D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7BDBDE3422D41310002C983D /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 				7B87C52322D4F60C00A1EC75 /* HomeViewController.m */,
 				7B87C52822D52A6300A1EC75 /* ComposeViewController.h */,
 				7B87C52922D52A6300A1EC75 /* ComposeViewController.m */,
+				7B9E1DAB22D6454E005C4A2F /* DetailsViewController.h */,
+				7B9E1DAC22D6454E005C4A2F /* DetailsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -447,6 +452,7 @@
 				7B87C53222D56B5800A1EC75 /* PostCell.m in Sources */,
 				7B87C52A22D52A6300A1EC75 /* ComposeViewController.m in Sources */,
 				7B87C52422D4F60C00A1EC75 /* HomeViewController.m in Sources */,
+				7B9E1DAD22D6454E005C4A2F /* DetailsViewController.m in Sources */,
 				7BDBDE3322D40FF8002C983D /* LoginViewController.m in Sources */,
 				7B87C52E22D552DB00A1EC75 /* Post.m in Sources */,
 			);

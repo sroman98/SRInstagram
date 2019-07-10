@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "LoginViewController.h"
 #import "ComposeViewController.h"
+#import "DetailsViewController.h"
 #import "Parse/Parse.h"
 #import "AppDelegate.h"
 #import "PostCell.h"
@@ -76,9 +77,18 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    UINavigationController *navigationController = [segue destinationViewController];
-    ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
-    composeController.delegate = self;
+    if([[segue identifier] isEqualToString:@"homeToComposeSegue"]) {
+        UINavigationController *navigationController = [segue destinationViewController];
+        ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
+        composeController.delegate = self;
+    } else {
+        UITableViewCell *tappedCell = sender;
+        NSIndexPath *indexPath =  [self.tableView indexPathForCell:tappedCell];
+        Post *post = self.posts[indexPath.row];
+        
+        DetailsViewController *detailsViewController = [segue destinationViewController];
+        detailsViewController.post = post;
+    }
 }
 
 - (void)didPostImage:(nonnull UIImage *)photo withCaption:(nonnull NSString *)caption {
