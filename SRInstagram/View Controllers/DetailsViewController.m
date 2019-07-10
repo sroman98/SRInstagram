@@ -7,8 +7,14 @@
 //
 
 #import "DetailsViewController.h"
+#import "NSDate+DateTools.h"
+@import Parse;
 
 @interface DetailsViewController ()
+
+@property (weak, nonatomic) IBOutlet PFImageView *photoImageView;
+@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *createdAtLabel;
 
 @end
 
@@ -17,6 +23,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.photoImageView.file = self.post[@"image"];
+    [self.photoImageView loadInBackground];
+    self.captionLabel.text = self.post.caption;
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    // Configure the input format to parse the date string
+    formatter.dateFormat = @"E MMM d HH:mm:ss Z y";
+    // Convert String to Date
+    NSDate *date = self.post.createdAt;
+    // Configure output format
+    NSDate *timeAgoDate = [NSDate dateWithTimeInterval:0 sinceDate:date];
+    // Convert Date to String
+    self.createdAtLabel.text = timeAgoDate.shortTimeAgoSinceNow;
 }
 
 /*
