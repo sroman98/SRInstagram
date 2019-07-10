@@ -82,7 +82,7 @@
 }
 
 - (IBAction)didTapShare:(id)sender {
-    UIImage *resizedImage = [self resizeImage:self.photo withSize:CGSizeMake(100, 100)];
+    UIImage *resizedImage = [self resizeImage:self.photo withSize:CGSizeMake(300, 300)];
     
     [Post postUserImage:resizedImage withCaption:self.captionTextView.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
         if(succeeded) {
