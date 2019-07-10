@@ -11,9 +11,13 @@
 #import "ComposeViewController.h"
 #import "Parse/Parse.h"
 #import "AppDelegate.h"
+#import "PostCell.h"
 
-@interface HomeViewController () <ComposeViewControllerDelegate>
-//UITableViewDataSource, UITableViewDelegate
+@interface HomeViewController () <ComposeViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *posts;
+
 
 @end
 
@@ -22,6 +26,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    
+    [self fetchPosts];
+}
+
+- (void)fetchPosts {
+    // construct query
+    PFQuery *postQuery = [Post query];
+    [postQuery orderByDescending:@"createdAt"];
+    [postQuery includeKey:@"author"];
+    postQuery.limit = 20;
+    
+    // fetch data asynchronously
+    [postQuery findObjectsInBackgroundWithBlock:^(NSArray<Post *> * _Nullable posts, NSError * _Nullable error) {
+        if (posts) {
+            self.posts = [[NSMutableArray alloc] initWithArray:posts];
+            [self.tableView reloadData];
+        } else {
+            NSLog(@"Error getting posts: %@", error.localizedDescription);
+        }
+    }];
 }
 
 - (IBAction)didTapLogout:(id)sender {
@@ -50,7 +76,21 @@
 }
 
 - (void)didPostImage:(nonnull UIImage *)photo withCaption:(nonnull NSString *)caption {
-    NSLog(@"I uploaded %@ with capt %@", photo, caption);
+    NSLog(@"I uploaded your photo");
 }
+
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    PostCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PostCell"];
+    
+    Post *post = self.posts[indexPath.row];
+    [cell configureCell:post];
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.posts.count;
+}
+
 
 @end

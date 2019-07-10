@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Parse/Parse.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -15,8 +15,7 @@
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(  NSDictionary *)launchOptions {
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(  NSDictionary *)launchOptions {    
     ParseClientConfiguration *config = [ParseClientConfiguration   configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
         
         configuration.applicationId = @"srinstagram";
@@ -59,6 +58,5 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 @end
