@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *posts;
 
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -30,6 +31,10 @@
     self.tableView.delegate = self;
     
     [self fetchPosts];
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(fetchPosts) forControlEvents:UIControlEventValueChanged];
+    [self.tableView insertSubview:self.refreshControl atIndex:0];
 }
 
 - (void)fetchPosts {
@@ -47,6 +52,7 @@
         } else {
             NSLog(@"Error getting posts: %@", error.localizedDescription);
         }
+        [self.refreshControl endRefreshing];
     }];
 }
 
