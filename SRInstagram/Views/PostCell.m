@@ -26,7 +26,14 @@
     
     self.postImageView.file = post[@"image"];
     [self.postImageView loadInBackground];
-    self.captionLabel.text = self.post.caption;
+    self.captionLabel.text = post.caption;
+    
+    PFUser *author = post.author;
+    NSString *username = author.username;
+    self.usernameLabel.text = [NSString stringWithFormat:@"@%@", username];
+    
+    self.profilePicImageView.file = author[@"image"];
+    [self.profilePicImageView loadInBackground];
 }
 
 @end
