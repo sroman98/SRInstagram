@@ -2,7 +2,7 @@
 
 **Instagram** is a photo sharing app using Parse as its backend.
 
-Time spent: **13** hours spent in total
+Time spent: **16** hours spent in total
 
 ## User Stories
 
@@ -26,8 +26,8 @@ The following **optional** features are implemented:
 - [x] Show the username and creation time for each post
 - [ ] After the user submits a new post, show a progress HUD while the post is being uploaded to Parse
 - User Profiles:
-- [ ] Allow the logged in user to add a profile photo
-- [ ] Display the profile photo with each post
+- [x] Allow the logged in user to add a profile photo
+- [x] Display the profile photo with each post
 - [ ] Tapping on a post's username or profile photo goes to that user's profile page
 - [ ] User can comment on a post and see all comments for each post in the post details screen.
 - [ ] User can like a post and see number of likes for each post in the post details screen.
@@ -46,9 +46,9 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/ANXqvejvpy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [RecordIt](http://recordit.co).
 
 ## Credits
 
@@ -61,6 +61,7 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 
 Describe any challenges encountered while building the app.
 Database setup.
+Distractions everywhere.
 
 ### Command:
 parse-dashboard --appId srinstagram --masterKey v5*VTcDeMw8u --serverURL "https://srinstagram.herokuapp.com/parse"
